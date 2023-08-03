@@ -26,20 +26,28 @@ function setup() {
   leftWall = new Base(300, height / 2 + 50, 600, 100, "#8d6e63", true);
   rightWall = new Base(width - 300, height / 2 + 50, 600, 100, "#8d6e63", true);
 
-  /*bridge = new Base(15, { x: width / 2 - 400, y: height / 2 });
+  /*
+  bridge = new Base(15, { x: width / 2 - 400, y: height / 2 });
   jointPoint = new Base(width - 600, height / 2 + 10, 40, 20, "#8d6e63", true);*/
-
-  /*bridge = new Bridge(15, { x: width / 2 - 400, y: height / 2 });
-  jointPoint = new Base(width - 600, height / 2 + 10, 40, 20, "#8d6e63", true);*/
-
-  /*bridge = new Base(15, { x: width / 2 - 400, y: height / 2 });
-  jointPoint = new Bridge(width - 600, height / 2 + 10, 40, 20, "#8d6e63", true);*/
-
-  /*bridge = new Bridge(15, { x: width / 2 - 400, y: height / 2 });
-  jointPoint = new Bridge(width - 600, height / 2 + 10, 40, 20, "#8d6e63", true);*/
 
   
-  //Matter.Composite.add(bridge.body, jointPoint);
+  bridge = new Bridge(15, { x: width / 2 - 400, y: height / 2 });
+  jointPoint = new Base(width - 600, height / 2 + 10, 40, 20, "#8d6e63", true);
+  
+
+  /*
+  bridge = new Base(15, { x: width / 2 - 400, y: height / 2 });
+  jointPoint = new Bridge(width - 600, height / 2 + 10, 40, 20, "#8d6e63", true);*/
+
+  /*
+  bridge = new Bridge(15, { x: width / 2 - 400, y: height / 2 });
+  jointPoint = new Bridge(width - 600, height / 2 + 10, 40, 20, "#8d6e63", true);*/
+
+  //********** */
+  //you need to ask the miss - Why did not we do jointPoint first? then bridge?!
+  //Where did we speicify the movement?
+
+  Matter.Composite.add(bridge.body, jointPoint);
 
   //Matter.Composite.add(jointPoint);
   
